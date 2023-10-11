@@ -1,0 +1,14 @@
+# RTB HOUSE FS Technical Task
+
+
+## POSTGRES DB
+
+### ENVS
+
+```
+PGADMIN_DEFAULT_EMAIL=admin@example.com
+PGADMIN_DEFAULT_PASSWORD=admin
+PGADMIN_LISTEN_PORT=5050
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+```

@@ -1,0 +1,37 @@
+version: '3'
+services:
+  server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./server
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+    ports:
+      - "3030:3030"
+
+  client:
+    stdin_open: true
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+    ports:
+      - "8080:8080"
+
+  postgres:
+    image: postgres:15.4
+    restart: always
+    env_file:
+      - postgres.dev.env
+    ports:
+      - "5432:5432"
+
+  pg-admin:
+    image: dpage/pgadmin4:7
+    env_file:
+      - postgres.dev.env
+    ports: 
+      - "5050:5050"

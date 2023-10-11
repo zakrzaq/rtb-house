@@ -4,3 +4,6 @@
 [submodule "server"]
 	path = server
 	url = git@github.com:zakrzaq/rtb-server.git
+[submodule "db"]
+	path = db
+	url = git@github.com:zakrzaq/rtb-db.git

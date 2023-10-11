@@ -1,14 +1,24 @@
 # RTB HOUSE FS Technical Task
 
+## REQUIREMENTS
 
-## POSTGRES DB
+Docker + docker compose (v.2)
 
-### ENVS
+## SETUP
 
-```
-PGADMIN_DEFAULT_EMAIL=admin@example.com
-PGADMIN_DEFAULT_PASSWORD=admin
-PGADMIN_LISTEN_PORT=5050
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-```
+This project requires **three** submodules. They can be setup using:
+
+`git submodule add <url> .`
+
+In `client` dir
+
+[rtb-client](https://github.com/zakrzaq/rtb-client)
+
+In `server` dir
+
+[rtb-server](https://github.com/zakrzaq/rtb-server)
+
+In `db` dir
+
+[rtb-db](https://github.com/zakrzaq/rtb-db)
+

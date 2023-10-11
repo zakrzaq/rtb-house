@@ -1,5 +1,20 @@
 version: '3'
 services:
+  postgres:
+    image: postgres:15.4
+    restart: always
+    env_file:
+      - postgres.dev.env
+    ports:
+      - "5432:5432"
+
+  pg-admin:
+    image: dpage/pgadmin4:7
+    env_file:
+      - postgres.dev.env
+    ports: 
+      - "5050:5050"
+
   server:
     build:
       dockerfile: Dockerfile.dev
@@ -21,17 +36,3 @@ services:
     ports:
       - "8080:8080"
 
-  postgres:
-    image: postgres:15.4
-    restart: always
-    env_file:
-      - postgres.dev.env
-    ports:
-      - "5432:5432"
-
-  pg-admin:
-    image: dpage/pgadmin4:7
-    env_file:
-      - postgres.dev.env
-    ports: 
-      - "5050:5050"

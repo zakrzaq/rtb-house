@@ -17,6 +17,10 @@ This is parent project that requires **three** functional submodules. They can b
 
 **DATABASE:** In `db` dir -> [rtb-db](https://github.com/zakrzaq/rtb-db)
 
+### ENVs
+
+Need to be setup in each submodule. Please refer to submodule README.
+
 ## RUN
 
 `docker compose up`

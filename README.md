@@ -7,13 +7,17 @@ docker compose (v.2)
 
 ## SETUP
 
-This project requires **three** submodules. They can be setup using:
+This is parent project that requires **three** functional submodules. They can be setup using:
 
 `git submodule add <url> .`
 
-In `client` dir -> [rtb-client](https://github.com/zakrzaq/rtb-client)
+**FROTNEND CLIENT:** In `client` dir -> [rtb-client](https://github.com/zakrzaq/rtb-client)
 
-In `server` dir -> [rtb-server](https://github.com/zakrzaq/rtb-server)
+**BACKEND SERVER:** In `server` dir -> [rtb-server](https://github.com/zakrzaq/rtb-server)
 
-In `db` dir -> [rtb-db](https://github.com/zakrzaq/rtb-db)
+**DATABASE:** In `db` dir -> [rtb-db](https://github.com/zakrzaq/rtb-db)
+
+## RUN
+
+`docker compose up`
 

@@ -2,7 +2,8 @@
 
 ## REQUIREMENTS
 
-Docker + docker compose (v.2)
+docker
+docker compose (v.2)
 
 ## SETUP
 

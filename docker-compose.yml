@@ -6,6 +6,7 @@ services:
       file: ./db/docker-compose.yml
       service: postgres
 
+  # NOTE: in case required
   # pg-admin:
   #   image: dpage/pgadmin4:7
   #   env_file:
@@ -37,4 +38,5 @@ services:
       - "8080:8080"
     depends_on:
       - postgres
+      - server
 
